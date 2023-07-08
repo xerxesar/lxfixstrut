@@ -1,0 +1,2 @@
+WINDOW_ID=$(xwininfo -name panel | grep Window\ id | cut -d ' ' -f4)
+xprop -id $WINDOW_ID -f _NET_WM_STRUT_PARTIAL 32c -set _NET_WM_STRUT_PARTIAL 0,0,$2,0,0,0,0,0,0,$1,0,0
